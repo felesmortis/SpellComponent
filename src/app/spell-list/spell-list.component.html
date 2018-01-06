@@ -1,5 +1,3 @@
-<ul>
-  <li *ngFor="let item of spells | async">
-    {{ item.name }}
-  </li>
-</ul>
+<div *ngFor="let item of spells | async">
+  <app-spell [spell]="item"></app-spell>
+</div>
