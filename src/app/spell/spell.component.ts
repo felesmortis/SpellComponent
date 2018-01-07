@@ -8,10 +8,22 @@ import { Spell } from '../spell';
 })
 export class SpellComponent implements OnInit {
   @Input() spell: Spell;
+  step = 0;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  setStep(index: number) {
+    this.step = index;
+  }
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
+  }
 }

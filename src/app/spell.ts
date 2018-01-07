@@ -7,4 +7,6 @@ export class Spell {
   name: string;
   school: string;
   ttc: number;
+  upkeep: number;
+  advanced: string;
 }
